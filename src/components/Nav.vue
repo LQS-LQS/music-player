@@ -7,7 +7,7 @@
         <li><router-link to="/" exact>首页</router-link></li>
         <li><router-link to="/topic">榜单</router-link></li>
         <li><router-link to="/mine">我的</router-link></li>
-        <li><router-link to="/search">搜索</router-link></li>  
+        <li><router-link to="/search">搜索</router-link></li>
       </ul>  
     </div>
   </div>
