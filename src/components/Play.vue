@@ -36,7 +36,8 @@ export default {
     let fullScreen = this.$refs.fullScreen;
     let height2 = document.documentElement.clientHeight - fullScreen.clientHeight ;
     fullScreen.style.position = "fixed";
-    fullScreen.style.top = height2 + 'px';
+    fullScreen.style.bottom = '0px';
+    // fullScreen.style.top = height2 + 'px';
 
     this.addEventHandle();
 
@@ -82,7 +83,7 @@ div[name="media"]{
 .fullScreen{
   right: 1px;
   width: 10%;
-  height: 37px;
+  height: 44px;
   border-radius: 50%;
   background-color: aqua;
 }

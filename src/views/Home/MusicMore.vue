@@ -12,8 +12,8 @@
         class="neumorphic"
       />
       <span class="first">{{ item.name }}</span>
-      <span class="second"><i>歌手：</i>{{ item.artists[0].name }}</span>
-      <div class="plus"> <img src="../../../src/assets/jiahao.png" @click="addMusic(item.id,item.name,item.artists[0].name)"></div>
+      <span class="second"><i>歌手：</i>{{ item.ar[0].name || 未知 }}</span>
+      <div class="plus"> <img src="../../../src/assets/jiahao.png" @click="addMusic(item.id,item.name,item.ar[0].name)"></div>
       <div class="pause"  @click="changeMode(index,item.id)" v-show="playIndex == index && isPlaying"><i class="fas fa-pause"></i></div>
       <div class="play"  @click="changeMode(index,item.id)" v-show="!(playIndex == index) || isPlaying==false"><i class="fas fa-play"></i></div>
     </div>
